@@ -24,10 +24,13 @@ int* twoSum(int* nums, int numsSize, int target) {
     return sol;
 }
 
+//--- Static Declare
+static const int target = 18;
+static const int arrLen = 4;
+static int arr[arrLen] = {0, 2, 6, 16};
+
+
 int main() {
-	const int target = 223;
-	const int arrLen = 4;
-	int arr[arrLen] = {0, 2, 6, 16};
 	int* sol = NULL;
 	
 	sol = twoSum(arr, arrLen, target);
